@@ -1,8 +1,4 @@
-
-
-
-
-
+@(departments:List[models.DepartmentModel])
 
 <head>
 <style>
@@ -47,7 +43,8 @@
 	height:100%;
 	width:10%;
 	float:left;
-	background-color:#eeeeee;
+	background-color:white;
+	
 }
 
 #footer{
@@ -94,7 +91,7 @@
    
 </style>
 
-<title>EDSystem</title>
+
 </head>
 
 
@@ -115,23 +112,39 @@
 	
 	<div id="d3">
 	
-		<div id="content">
+	<div id="content">
 		
-			<div id="list" style="margin-left:100px;>
+			<div id="list">
 				
-
-<ul>
-	 <li><a href=""><h3><b></b></h3></a></li>
-	 	 <li><a href="@routes.Application.allManagers"><h3><b>List Of ALL Managers</b></h3></a></li>
-
-	 <li><a href="@routes.Application.allDepartments"><h3><b>List Of ALL Departments</b></h3></a></li>
-	 <li><a href="@routes.Application.allEmployees"><h3><b>List Of ALL Employees</b></h3></a></li> 
-</ul>
-		
+				<br/><br/><br/><br/><br/><br/><br/><br/>
+				<table style="margin-left:140px ">
+  <tr>
+ 					 @for(dept <- departments) {
+  	  	
+    						
+    				<td >
+    					<table>
+    						<tr>
+    							<a href="/DepartmentWiseManager/@dept.departmentName/@dept.id"><img src="/assets/images/@dept.departmentName@(".png")" alt="alt text" height="150" width="180" border="1" style="border-radius: 15px 50px;"/></a>
+    						</tr>
+    						<tr>
+    						<a href="/DepartmentWiseManager/@dept.departmentName/@dept.id"><h2>@dept.departmentName</h2></a>
+    						</tr>
+    						</table>
+    				</td>
+    				
+    						
+    						
+    
+   						}
+   						</tr>
+  </table>
 				
 			</div>
 			
-			
+			<div id="home" style="float:left;"><a href="/"><h1><I><U><b><img src="/assets/images/home.jpg" alt="HOME" height="50" width="90"  /></b></U></I></h1></a></div>
+		
+		</div>
 		
 		<div id="footer2">
 		Copyright © ALM-TEAM
@@ -143,7 +156,25 @@
 
 
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,9 +1,4 @@
-
-
-
-
-
-
+@(managers: List[models.EmployeeModel])
 <head>
 <style>
 
@@ -47,7 +42,7 @@
 	height:100%;
 	width:10%;
 	float:left;
-	background-color:#eeeeee;
+	background-color:white;
 }
 
 #footer{
@@ -94,15 +89,8 @@
    
 </style>
 
-<title>EDSystem</title>
+
 </head>
-
-
-
-
-
-
-																
 
 <body style="height: 100%; background-color:white" >
 
@@ -117,21 +105,40 @@
 	
 		<div id="content">
 		
-			<div id="list" style="margin-left:100px;>
+			<div id="list">
+				<br/><br/><br/><br/><br/><br/>
+				<table style="margin-left:100px ">
+				  
+				  
+				  
+				<tr>  
+				  @for(mgr <- managers) {
+				 
+			<td>
+				  	
+				<table>  	
+				    
+				<img src="/assets/images/@mgr.id@(".png")" alt="alt text" height="170" width="170" border="1"/>
+				<a href="/Reportees/@mgr.id"><h3>@mgr.name</h3></a>
+				@mgr.current_project<br/>
+				@mgr.email<br/>
+				@mgr.contact_number<br/>
+				@mgr.location<br/>
+				</tr>
+				</table>
 				
-
-<ul>
-	 <li><a href=""><h3><b></b></h3></a></li>
-	 	 <li><a href="@routes.Application.allManagers"><h3><b>List Of ALL Managers</b></h3></a></li>
-
-	 <li><a href="@routes.Application.allDepartments"><h3><b>List Of ALL Departments</b></h3></a></li>
-	 <li><a href="@routes.Application.allEmployees"><h3><b>List Of ALL Employees</b></h3></a></li> 
-</ul>
-		
+			</td>
+				
+				  }
+				  
+				  </tr>
+				  </table>
 				
 			</div>
 			
-			
+<div id="home" style="float:left;"><a href="/"><h1><b><I><U><img src="/assets/images/home.jpg" alt="HOME" height="50" width="90" border="0"/></U></I></b></h1></a></div>
+		
+		</div>
 		
 		<div id="footer2">
 		Copyright © ALM-TEAM
@@ -140,11 +147,6 @@
 	</div>
 
 </div>
-
-
-
-</div>
-
 
 
 

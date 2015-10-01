@@ -1,9 +1,50 @@
-2015-09-18 13:03:59,259 - [INFO] - from play in pool-8-thread-3 
+2015-09-30 15:50:30,755 - [INFO] - from play in pool-27-thread-2 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-09-18 13:04:25,843 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:mysql://localhost/slick?characterEncoding=UTF-8
+2015-09-30 15:50:37,750 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://172.27.59.148:3306/play1?characterEncoding=UTF-8
 
-2015-09-18 13:04:26,011 - [INFO] - from play in play-internal-execution-context-1 
+2015-09-30 15:50:38,140 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
+
+2015-09-30 15:50:50,814 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
+DepartmentModel(1,ALM-COE)
+DepartmentModel(2,Travel COE)
+DepartmentModel(3,Cloud COE)
+DepartmentModel(4,BigData COE)
+DepartmentModel(5,Media COE)
+
+2015-09-30 15:52:19,484 - [INFO] - from play in play-internal-execution-context-3 
+database [default] connected at jdbc:mysql://172.27.59.148:3306/play1?characterEncoding=UTF-8
+
+2015-09-30 15:52:19,503 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-09-30 15:55:36,198 - [DEBUG] - from application in play-akka.actor.default-dispatcher-22 
+DepartmentModel(1,ALM-COE)
+DepartmentModel(2,Travel COE)
+DepartmentModel(3,Cloud COE)
+DepartmentModel(4,BigData COE)
+DepartmentModel(5,Media COE)
+
+2015-09-30 15:55:36,205 - [DEBUG] - from application in play-akka.actor.default-dispatcher-23 
+DepartmentModel(1,ALM-COE)
+DepartmentModel(2,Travel COE)
+DepartmentModel(3,Cloud COE)
+DepartmentModel(4,BigData COE)
+DepartmentModel(5,Media COE)
+
+2015-09-30 15:55:36,274 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
+DepartmentModel(1,ALM-COE)
+DepartmentModel(2,Travel COE)
+DepartmentModel(3,Cloud COE)
+DepartmentModel(4,BigData COE)
+DepartmentModel(5,Media COE)
+
+2015-09-30 16:03:44,752 - [DEBUG] - from application in play-akka.actor.default-dispatcher-35 
+DepartmentModel(1,ALM-COE)
+DepartmentModel(2,Travel COE)
+DepartmentModel(3,Cloud COE)
+DepartmentModel(4,BigData COE)
+DepartmentModel(5,Media COE)
 
